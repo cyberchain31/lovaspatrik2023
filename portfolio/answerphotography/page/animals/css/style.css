@@ -1,0 +1,149 @@
+/*----------------ZACIATOK KAZDEHO DOKUMENTU CSS - NAMIESTO * TO MOZEM ZAPISAT AJ - html, body---------------*/
+/*ZAROVNANIE K OKRAJOM STRANKY*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* RESPOSIVE WEBDESIGN */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*-----------------------------------NA DOLNEJ LISTE ZAPNUT WATCH SASS---------------------------------------*/
+/* PARTIALS - PREPOJENIE, ROZDELENIE PREMENNYCH DO DRUHEHO SUBORU (KOLI PREHLADNOSTI) */
+/*----------------------------------------------------------------------------------------------------------*/
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#db7a54), to(#4f9955)) no-repeat;
+  background: linear-gradient(#db7a54, #4f9955) no-repeat;
+}
+
+h1, h4 {
+  font-family: 'Pushster', cursive;
+  text-decoration: underline;
+}
+
+.gallery1 {
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5% auto 5%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.image-box1 {
+  margin: 0 1%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.image-box1 img {
+  height: 65%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  padding: 1%;
+}
+
+.image-box1:hover {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.active {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.gallery1:hover .active {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.image-box1:nth-child(1):hover {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+/*
+.gallery2 {
+  //height: 100%;
+  width: 98%;
+  display: flex;
+  margin: 5% auto 5%;    // z hora, z bokov, z dola
+  height: 100vh;
+}
+
+.image-box2 {
+  margin: 0 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 0.5s;
+  padding: 1%;
+}
+
+.image-box2 img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.image-box2:hover {
+  flex-basis: 70%;
+}
+
+.active2 {
+  flex-basis: 50%;
+}
+
+.gallery2:hover .active2 {
+  flex-basis: 0;
+}
+
+.image-box2:nth-child(1):hover {
+  flex-basis: 70%;
+}
+
+.image-box2:nth-child(2):hover {
+  flex-basis: 30%;
+}
+
+.image-box2:nth-child(3):hover {
+  flex-basis: 30%;
+}
+
+.image-box2:nth-child(5):hover {
+  flex-basis: 50%;
+}
+*/
+.footerSize {
+  font-size: 12px;
+}
+
+/*---------------------------------------VYPNUTIE FLOATOVANIE ELEMENTOV-------------------------------------*/
+/* v html vytvorit <div class="clearfix"></div> - Umiestnit na koniec kodu) */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

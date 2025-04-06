@@ -1,0 +1,51 @@
+/*----------------ZACIATOK KAZDEHO DOKUMENTU CSS - NAMIESTO * TO MOZEM ZAPISAT AJ - html, body---------------*/
+/*ZAROVNANIE K OKRAJOM STRANKY*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* RESPOSIVE WEBDESIGN */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*-----------------------------------NA DOLNEJ LISTE ZAPNUT WATCH SASS---------------------------------------*/
+/* PARTIALS - PREPOJENIE, ROZDELENIE PREMENNYCH DO DRUHEHO SUBORU (KOLI PREHLADNOSTI) */
+/*----------------------------------------------------------------------------------------------------------*/
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#62bdd4), to(#6b2c85)) no-repeat;
+  background: linear-gradient(#62bdd4, #6b2c85) no-repeat;
+}
+
+h1, h4 {
+  font-family: 'Pushster', cursive;
+  text-decoration: underline;
+}
+
+.box {
+ padding-top: 230px;
+ height: 100vh;
+}
+
+.footerSize {
+  font-size: 12px;
+}
+
+/*---------------------------------------VYPNUTIE FLOATOVANIE ELEMENTOV-------------------------------------*/
+/* v html vytvorit <div class="clearfix"></div> - Umiestnit na koniec kodu) */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

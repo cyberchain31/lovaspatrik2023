@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #3d64e6;
+}
+.title {
+  color: #ffffff;
+  position: absolute;  /* Absolútna pozícia vzhľadom na rodičovský prvok */
+  top: 0;              /* Umiestnenie na vrch stránky */
+  left: 50%;           /* Posun do stredu horizontálne */
+  transform: translateX(-50%); /* Korekcia, aby bol presne v strede */
+  text-align: center;  /* Zarovnanie textu na stred */
+  width: 100%;         /* Môžeš zmeniť na menšiu šírku, ak chceš */
+  padding: 20px;       /* Pridanie priestoru hore */
+  font-size: 2rem;     /* Veľkosť písma */
+}
+.container {
+  background-color: #ffffff;
+  width: 80vw;
+  max-width: 37.5em;
+  padding: 3em 2.5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.62em;
+  box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+}
+.search-wrapper {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.25em;
+}
+.search-wrapper button {
+  font-size: 1em;
+  background-color: #3d64e6;
+  color: beige;
+  padding: 0.8em 0;
+  border: 0;
+  border-radius: 1.5em;
+}
+.search-wrapper input {
+  font-size: 1em;
+  padding: 0 0.62em;
+  border-bottom: 2px solid #3d64e6;
+  border: none;
+  outline: none;
+  color: rgb(28, 85, 189);
+}
+#result {
+  margin-top: 1.25em;
+}
+.container .flag-img {
+  display: block;
+  width: 45%;
+  min-width: 7.5em;
+  margin: 1.8em auto 1.2em auto;
+}
+.container h2 {
+  font-weight: 600;
+  color:#111319;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.8em;
+}
+.data-wrapper {
+  margin-bottom: 1em;
+  letter-spacing: 0.3px;
+}
+.container h4 {
+  display: inline;
+}
+.container span {
+  color:#2b2b21;
+}
+.container h1 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #c84f4f;
+}
+footer {
+  position: fixed; /* Fixované na spodok stránky */
+  bottom: 0;       /* Umiestnenie na spodný okraj */
+  left: 0;         /* Umiestnenie na ľavý okraj */
+  padding: 10px;   /* Priestor okolo textu */
+  background-color: #333; /* Tmavé pozadie */
+  color: white;    /* Biela farba textu */
+  width: 100%;     /* Rozšírenie na celú šírku */
+  text-align: left; /* Zarovnanie textu doľava */
+}
+.bottom-link {
+  position: fixed;  /* Fixovaná pozícia, aby zostal na rovnakom mieste */
+  bottom: 10px;     /* Umiestnenie 10px od spodného okraja */
+  right: 10px;      /* Umiestnenie 10px od pravého okraja */
+  color: white;     /* Biela farba textu */
+  text-decoration: none; /* Odstránenie podčiarknutia odkazu */
+  border-radius: 5px; /* Zaoblené rohy */
+}
+.bottom-link:hover {
+  background-color: #0056b3; /* Tmavšia modrá pri prechode myšou */
+}
+
+/* Responzívny dizajn pre malé obrazovky */
+@media (max-width: 480px) {
+  .search-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+  }
+
+  #country-inp, #search-btn {
+      width: 100%;
+  }
+
+  #search-btn {
+      padding: 12px;
+      font-size: 18px;
+  }
+}

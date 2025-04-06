@@ -1,0 +1,47 @@
+@media only screen and ( max-width:1000px ) {
+
+    .navbarunderline li:hover,
+    .navbarunderline li:active {
+        border-bottom: 2px solid white;
+        width: 105px;
+   }
+
+   .flipsterGallery {
+       
+       margin-bottom: -120px;
+   }
+
+   .flipster li {
+       width: 100%;     
+   }
+
+   .heading {
+    font-size: 50px;
+   }
+
+   .footertSize {
+       font-size: 10px;
+   }
+
+}
+
+@media only screen and ( max-width:600px ) {
+
+.responsiveImage {
+      width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(58, 58, 58);
+}
+
+.container {
+    text-align: center;
+    width: 600px;
+    outline: 1px solid rgb(63, 63, 63);
+    /*ZAROVNAM FORMULAR NA STRED(MUSIM POUZIT,TOP,LEFT,TRANSFORM)*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color:rgb(56, 56, 56);*/
+    /* background: url("../img/bottas.jpg") no-repeat 0 -50px; */
+    /*opacity: 0.3;*/
+    padding: 50px;
+    box-shadow: 4px 4px 20px white;
+    border-radius: 10px;
+    /* background-color: rgb(175, 132, 38); */
+    background-image: linear-gradient(to bottom right, rgb(206, 204, 204), rgb(70, 71, 71));
+}
+
+.container h3 {
+    color: rgb(24, 24, 24);
+}
+
+.container p {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.container p a {
+    color: white;
+}
+
+@media (max-width: 750px) {
+    .container {
+        /* flex: 0 0 100%; */
+        /* margin: 0 100px; */
+        /* display: block; */
+        /* padding: 100px; */
+        width: 300px;
+        padding: 20px;
+
+    }
+
+    .container h1 {
+        font-size: 22px;
+        /* padding: 0 20px; */
+    }
+
+    .container h3 {
+        font-size: 14px;
+        /* padding: 0 20px; */
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+}

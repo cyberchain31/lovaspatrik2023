@@ -1,0 +1,66 @@
+/*----------------ZACIATOK KAZDEHO DOKUMENTU CSS - NAMIESTO * TO MOZEM ZAPISAT AJ - html, body---------------*/
+/*ZAROVNANIE K OKRAJOM STRANKY*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* RESPOSIVE WEBDESIGN */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*-----------------------------------NA DOLNEJ LISTE ZAPNUT WATCH SASS---------------------------------------*/
+/* PARTIALS - PREPOJENIE, ROZDELENIE PREMENNYCH DO DRUHEHO SUBORU (KOLI PREHLADNOSTI) */
+/*----------------------------------------------------------------------------------------------------------*/
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4f9955), to(#5454db));
+  background: linear-gradient(#4f9955, #5454db);
+}
+
+.behind {
+  overflow: hidden;
+  padding: 7px;
+}
+
+.behind img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.behind img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+h1, h4 {
+  font-family: 'Pushster', cursive;
+  text-decoration: underline;
+}
+
+.footerSize {
+  font-size: 12px;
+}
+
+/*---------------------------------------VYPNUTIE FLOATOVANIE ELEMENTOV-------------------------------------*/
+/* v html vytvorit <div class="clearfix"></div> - Umiestnit na koniec kodu) */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

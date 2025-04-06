@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(rgb(49, 123, 167), rgb(26, 25, 25));
+
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+   float: right;
+   cursor: pointer;
+   margin: -35px 10px;
+   font-size: 20px;
+   color: #b6b6b6;
+}
+
+#hide {
+    display: none;
+}
+
+#hidez {
+    display: none;
+}
+
+footer {
+    margin-top: auto; 
+}
+
+.footerSize {
+    font-size: 12px;
+  }
+

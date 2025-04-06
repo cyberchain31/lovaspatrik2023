@@ -1,0 +1,159 @@
+/* google font - title */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+/* nadpis prehravaca */
+h1 {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    font-size: 26px;
+    color: #fff;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    justify-content: center;
+}
+
+.music-container {
+    background-color: rgb(194, 176, 176);
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px 0 rgba(255, 255, 255, 0.253);
+    display: flex;
+    position: relative;
+    padding: 15px 15px;
+    margin: 75px 0;
+    /* vlastnost urcuje vysku prvku na ose z, funguje len pri poziciovanych prvkov */
+    z-index: 10;
+    top: 220px;
+    left: -10px;
+}
+
+/* image albumu */
+.img-container {
+    position: relative;
+    width: 100px;
+}
+
+/* ,,diera v strede platne,, */
+.img-container::after {
+    content: '';
+    background-color: rgb(73, 69, 69);
+    border-radius: 50%;
+    border: 1px solid rgb(121, 121, 121);
+    position: absolute;
+    bottom: 2px;
+    left: 55px;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 150px;
+    /* width: inherit; */
+    position: absolute;
+    bottom: -50px;
+    left: -20px;
+    animation: rotate 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+/* otacanie */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* vlastnost urcuje vysku prvku na ose z, funguje len pri poziciovanych prvkov */
+    z-index: 1;
+    margin-left: 40px;
+}
+
+/* tlacitka */
+.action-btn {
+    background-color: rgb(194, 176, 176);
+    border: 0;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.action-btn.action-btn-big {
+    color: rgb(43, 43, 43);
+    font-size: 25px;
+}
+
+/* 
+.action-btn:focus {
+    outline: 0;
+  } */
+
+  /* cely kontainer prehravaca */
+.music-info {
+    background-color: rgb(170, 158, 158);
+    /* background-color: rgb(194, 176, 176); */
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 33px;
+    width: calc(100% - 15%);
+    /* padding: 10px 10px 10px 150px; */
+    padding: 16px 9px 8px 105px;
+    /* priehladnost skrytej listy */
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3 ease-in, opacity 0.3 ease-in;
+    /* vlastnost urcuje vysku prvku na ose z, funguje len pri poziciovanych prvkov- ci je na vrchu alebo pod vrchom */
+    z-index: 0;
+}
+
+/* titulok songy */
+.music-container .music-info h4 {
+    font-size: 15px;
+}
+
+/* zobrazenie nazov a casomiera songy */
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+/* .music-info h4 {
+    margin: 0;
+  } */
+
+/* lista casomiery */
+.progress-container {
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px 0;
+    height: 4px;
+    width: 100%;
+}
+
+/* text casomiery */
+.progress {
+    background-color: var(--skin-color);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}

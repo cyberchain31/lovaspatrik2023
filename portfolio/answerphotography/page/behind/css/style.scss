@@ -1,0 +1,71 @@
+/*----------------ZACIATOK KAZDEHO DOKUMENTU CSS - NAMIESTO * TO MOZEM ZAPISAT AJ - html, body---------------*/
+
+/*ZAROVNANIE K OKRAJOM STRANKY*/
+
+* {                                    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /* RESPOSIVE WEBDESIGN */
+
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after {
+     box-sizing: border-box;
+ }
+
+/*-----------------------------------NA DOLNEJ LISTE ZAPNUT WATCH SASS---------------------------------------*/
+
+/* PARTIALS - PREPOJENIE, ROZDELENIE PREMENNYCH DO DRUHEHO SUBORU (KOLI PREHLADNOSTI) */
+
+//@import "../partials/mixins";              // CERPA ZO SUBORU _mixins.scss
+//@import "../css/variables";                // CERPA ZO SUBORU _variables.scss
+//@import "../partials/functions";           // CERPA ZO SUBORU _functions.scss
+//@import "../partials/_utilities.scss";     // CERPA ZO SUBORU _utilities.scs
+
+ /*----------------------------------------------------------------------------------------------------------*/
+body {
+    background: linear-gradient(rgb(79, 153, 85), (rgb(84, 84, 219)));
+    //height: 100vh;                             // vh - viewport hight, vyska okna bude vzdy 100%
+}
+
+.behind {
+    overflow: hidden;
+    padding: 7px;
+}
+
+  .behind  img {
+    filter: grayscale(100%);
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.behind  img:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+    //transform: scale(1.1);
+  }
+
+  h1, h4 {
+    font-family: 'Pushster', cursive;
+    text-decoration: underline;
+  }
+
+  .footerSize {
+    font-size: 12px;
+  }
+
+ /*---------------------------------------VYPNUTIE FLOATOVANIE ELEMENTOV-------------------------------------*/
+ 
+ /* v html vytvorit <div class="clearfix"></div> - Umiestnit na koniec kodu) */
+
+ .clearfix:before,
+ .clearfix:after {
+     content: "";
+     display:table;
+     clear:both;
+ }

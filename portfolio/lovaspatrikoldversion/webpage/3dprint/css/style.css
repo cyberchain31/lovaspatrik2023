@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* po kliknuti na menu li skoroluje celou strankou */
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-black-100: rgb(51, 51, 51);
+    --bg-white-100: rgba(255, 255, 255, 0.671);
+    --skin-color-black: rgb(59, 57, 57);
+    /* H5 */
+    --h5-text-color: rgb(78, 76, 76);
+    /* HLAVNY TITULOK */
+    --h1-title-color: rgb(148, 81, 187);
+    /* --h1-row-color: rgb(3, 190, 128); */
+    --h1-row-color: rgb(219, 151, 32);
+    /* PODTITULOK */
+    /* --title-color: rgb(219, 151, 32); */
+    --title-color: rgb(120, 170, 73);
+    --subtitle-color: rgb(3, 162, 190);
+
+    --subtitle-img-color: rgba(255, 255, 255, 0.452);
+}
+
+body {
+    /* background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.178), rgba(109, 105, 105, 0.836)); */
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.178), rgba(145, 145, 145, 0.452)); */
+    /* background-image: url(../img//mark2.jpg); */
+    /* height: 100vh; */
+    /* background-repeat: no-repeat; */
+    background-image: url('../img/bgprint3d.jpg');
+    background-size: contain;
+    background-position: 0 -70px;
+}
+
+/* ===== POZADIA - FARBY ===== */
+
+.main-content-ironman {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.178), rgb(71, 70, 70));
+}
+
+.main-content-venom {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.178), rgb(5, 92, 99));
+}
+
+.main-content-blackwidow {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.178), rgb(187, 137, 0));
+}
+
+.main-content-hulk {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.178), rgb(47, 170, 9));
+}
+
+.main-content-blackpanther {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.178), rgb(58, 29, 82));
+}
+
+.main-content-spiderman {
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.178), rgb(223, 10, 10));
+}
+
+/* horny a dolny padding */
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 55px;
+    /* margin: 0 10px; */
+}
+
+/* horna cast pravej strany */
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    /* background: rgb(74, 145, 118); */
+}
+
+/* ===== NADPIS ===== */
+
+/* okraje- pre celu sekciu */
+.padd-15 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/* hlavny nadpis sculpture */
+.print3d .section-title h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: var(--h1-title-color);
+    font-weight: 700;
+    position: relative;
+}
+
+/* pozicia podciarknutia skill prvy */
+.section-title h2::before {
+    content: "";
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    background: var(--h1-row-color);
+    /* border-bottom: 3px solid var(--skin-color); */
+    top: 100%;
+    left: 0;
+}
+
+/* pozicia podciarknutia skill druhy */
+.section-title h2::after {
+    content: "";
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    background: var(--h1-row-color);
+    /* border-bottom: 3px solid var(--skin-color); */
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+/* podnadpis */
+.print3d .section-title h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--title-color);
+}
+
+/* podnadpis zmena farby */
+.print3d .section-title h3 span,
+h4 span {
+    font-size: 16px;
+    color: var(--subtitle-color);
+}
+
+.section-info {
+    margin-top: 40px;
+}
+
+/* uprava nadpisu h4 */
+.print3d .section-info h4 {
+    font-size: 20px;
+    /* margin-bottom: 15px; */
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 15px;
+    /* text-transform: capitalize; */
+}
+
+.print3d .section-title p {
+    color: var(--skin-color-black);
+    margin: 20px 0;
+}
+
+.print3d .section-info p {
+    color: var(--skin-color-black);
+    margin: 5px 0;
+}
+
+/* nastavenie umiestnenie boxov */
+.gallery h5 {
+    /* background-color: var(--bg-black-700); */
+    /* background-image: url(../img/print3d/mark2.jpg); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-color: var(--subtitle-img-color);
+
+    /* border-radius: 5px; */
+    border: 1px solid var(--bg-black-100);
+    padding: 7px 20px;
+    text-align: center;
+    box-shadow: 1px 1px 5px var(--skin-color-black);
+    /* cursor: pointer; */
+    color: var(--h5-text-color);
+    margin-bottom: 10px;
+
+    transition: all 0.3 ease;
+}
+
+/* .gallery h5:hover {
+    background-color: var(--title-color);
+} */
+
+/* ===== GALLERY ===== */
+
+.photo img {
+    max-width: 100%;
+    display: block;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgb(41, 41, 41);
+    border-radius: 5px;
+
+    transition: 0.4s;
+}
+
+.photo img:hover {
+    background-color: rgb(146, 146, 146);
+    transition: all 0.3s ease;
+    /* border: 1px solid rgb(224, 224, 224); */
+    transform: translate(0, -10px);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery>div {
+    flex: 1 1 100px;
+}
+
+/* ===== HOME - IKONA ===== */
+
+.print3d .section-home {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.print3d .section-home i {
+    font-size: 30px;
+    color: var(--bg-white-100);
+}
+
+.section-home:hover {
+    /* font-size: 35px; */
+    transform: scale(1.2);
+    /* transition: all 0.3s ease; */
+    /* color: var(--h1-title-color); */
+}
+
+
+.print3d .section-home p {
+    font-weight: 500;
+    color: var(--skin-color-black);
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    /* position:relative; */
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    /* Height of the footer */
+    background: var(--bg-black-100);
+    padding: 10px 0;
+    margin-top: 60px;
+}
+
+.footer p {
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+    color: var(--bg-white-100);
+}
+
+/* ===== MEDIA QUERY ===== */
+@media (max-width: 750px) {
+
+    body {
+        background-position: 0 -20px;
+    }
+
+    .print3d .section-title h3 span,
+    h4 span {
+        font-size: 14px;
+    }
+
+    .gallery h5 {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+
+    .print3d .section-home p {
+        font-size: 14px;
+
+    }
+
+    .footer {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .footer p {
+        padding: 6px 0;
+        text-align: center;
+        font-size: 13px;
+    }
+}

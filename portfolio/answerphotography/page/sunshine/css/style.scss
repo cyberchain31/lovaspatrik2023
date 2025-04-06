@@ -1,0 +1,67 @@
+/*----------------ZACIATOK KAZDEHO DOKUMENTU CSS - NAMIESTO * TO MOZEM ZAPISAT AJ - html, body---------------*/
+
+/*ZAROVNANIE K OKRAJOM STRANKY*/
+
+* {                                    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /* RESPOSIVE WEBDESIGN */
+
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after {
+     box-sizing: border-box;
+ }
+
+/*-----------------------------------NA DOLNEJ LISTE ZAPNUT WATCH SASS---------------------------------------*/
+
+/* PARTIALS - PREPOJENIE, ROZDELENIE PREMENNYCH DO DRUHEHO SUBORU (KOLI PREHLADNOSTI) */
+
+//@import "../partials/mixins";              // CERPA ZO SUBORU _mixins.scss
+//@import "../css/variables";                // CERPA ZO SUBORU _variables.scss
+//@import "../partials/functions";           // CERPA ZO SUBORU _functions.scss
+//@import "../partials/_utilities.scss";     // CERPA ZO SUBORU _utilities.scs
+
+ /*----------------------------------------------------------------------------------------------------------*/
+body {
+    background: linear-gradient(rgb(202, 177, 65), (rgb(187, 26, 26)));
+}
+
+h1, h4 {
+    font-family: 'Pushster', cursive;
+    text-decoration: underline;
+}
+
+.sunshine {
+    overflow: hidden;
+}
+
+.sunshine img {
+  border-radius: 10px;
+}
+
+.sunshine img:hover {
+    filter: grayscale(100%);
+    transition: 0.5s;
+    //transform: scale(1.1);
+}
+
+.footerSize {
+    font-size: 12px;
+}
+
+ /*---------------------------------------VYPNUTIE FLOATOVANIE ELEMENTOV-------------------------------------*/
+ 
+ /* v html vytvorit <div class="clearfix"></div> - Umiestnit na koniec kodu) */
+
+ .clearfix:before,
+ .clearfix:after {
+     content: "";
+     display:table;
+     clear:both;
+ }

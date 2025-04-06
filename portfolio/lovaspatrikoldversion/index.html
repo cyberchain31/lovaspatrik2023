@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>lovaspatrik.sk</title>
+  <!-- Text under google search -->
+  <meta name="description" content="lovaspatrik.sk">
+  <meta name="author" content="Patrik Lovás">
+  <!-- Responsive Design - Page Settings (ZOOM 1.0 is 100%) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <!-- music player -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Music Player -->
+  <link rel="stylesheet" href="css/music-player.css">
+  <!-- skin-color 1 -->
+  <link rel="stylesheet" href="skins/color-1.css">
+  <!-- Style Switch -->
+  <link rel="stylesheet" href="css/style-switch.css">
+  <!-- skin-color 1-2-3 -->
+  <link rel="stylesheet" href="skins/color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="skins/color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="skins/color-3.css" class="alternate-style" title="color-3" disabled>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon/faviconspartan.ico" />
+</head>
+
+<body>
+  <!-- ===== Hlavny Kontainer celej stranky - Start ===== -->
+  <div class="main-container">
+
+    <!-- ===== Lava Strana - Aside Left Container - Start ===== -->
+    <div class="aside-container">
+      <!-- <div class="nav">
+      <div class="row"> -->
+      <div class="logo">
+        <a href="https://lovaspatrik.sk/">Patrik<span> Lovás</span></a>
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <i class="bi bi-list open"></i>
+      </div>
+      <!-- navigation left -->
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="bi bi-house-fill"></i> Domov</a></li>
+        <li><a href="#skill"><i class="list bi bi-person-fill"></i> Zručnosti</a></li>
+        <li><a href="#portfolio"><i class="list bi bi-braces"></i> Portfólio</a></li>
+        <li><a href="#print3d"><i class="list bi bi-badge-3d-fill"></i> 3D Tlač</a></li>
+        <li><a href="#sculpture"><i class="list bi bi-palette-fill"></i> Modelovanie</a></li>
+        <li><a href="#contact"><i class="list bi bi-send-fill"></i> Kontakt</a></li>
+      </ul>
+
+      <!-- ===== Music Player - Start ===== -->
+      <!-- container all player -->
+      <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h4 id="title"></h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+
+        <audio src="#" id="audio"></audio>
+
+        <div class="img-container">
+          <img src="#" alt="music-cover" id="cover" />
+        </div>
+        <div class="navigation">
+          <button class="action-btn" id="prev">
+            <i class="bi bi-skip-backward-fill"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="bi bi-play-fill"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="bi bi-skip-forward-fill"></i>
+          </button>
+        </div>
+        <h1>Music Player</h1>
+      </div>
+    </div>
+
+    <!-- ===== Prava Strana - Aside Right Container - Start ===== -->
+    <div class="main-content">
+
+      <!-- ===== Sekcia DOMOV - Start ===== -->
+      <!-- mozem pouzit hidden, ked chcem skrt celu sekciu -->
+      <section class="home section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="title">Vitaj na mojej stránke, <span class="typing"></span></h3>
+              <h3 class="intro">Patrik <span>Lovás</span></h3>
+              <h5 class="intro-subtitle">Rookie - Full Stack Web Developer</h5>
+              <p>Som typický Vodnár.
+                Vlastnosti u týchto vzdušných a rozháraných Vodnárov sú umocnené v pozitívnom i v negatívnom zmysle
+                slova.
+                Bývajú vytrvalí, pokojní, vyrovnaní a sústredení, ale aj popudliví, nepokojní, originálni a plní
+                fantázie.
+                Typickí Vodnári majú pevnú vôľu a dokážu ísť veľmi dlho za svojim cieľom.
+              </p>
+              <!-- <a href="#" class="btn hire-me">Hire me</a> -->
+            </div>
+            <div class="avatar-img padd-15">
+              <!-- <img src="./img/avatar.jpg" alt="avatar"> -->
+              <img>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Sekcia SKILL - Start ===== -->
+      <section class="about section" id="skill">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Zručnosti</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>Schopnosť<span> robiť to čo ťa baví</span></h3>
+                  <p>Nezáleží na tom, ako pomaly napreduješ, pokiaľ nezastavíš. A ak sa budeš chcieť vzdať, spomeň si,
+                    prečo si začal. Pracuj na tom.</p>
+                </div>
+              </div>
+
+              <!-- personal-info  -->
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>CMS:<span> Wordpress / Wix</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p> Code Editor:<span> VS Code / PyCharm</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Package Manager:<span> Node.js / Npm</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Web Server:<span> XAMPP / WampServer</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Framework:<span> Bootstrap / SCSS</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Hosting:<span> WebHosting / GitKraken</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Graphics Software:<span> SketchUp / PrusaSlicer</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>OS:<span> WIN 10 / Linux / Android</span></p>
+                    </div>
+                  </div>
+                  <!-- button -->
+                  <!-- <div class="row">
+                    <div type="button" class="button padd-15" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <a href="#" class="btn">Kalokagatiaa</a>
+                     
+                    </div>
+                  </div> -->
+
+
+                  <!-- button -->
+                  <div class="row">
+                    <div type="button" class="button padd-15" data-bs-toggle="modal" data-bs-target="#exampleModalName">
+                      <a href="#" class="btn">Kalokagatia</a>
+
+                    </div>
+                  </div>
+
+                  <!-- MODAL -->
+                  <div class="modal fade" id="exampleModalName" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/kalokagatia.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <div class="modal-footer">
+                          <h3 style="color:black" class="text-decoration-underline">#IceSwimmingKalokagatia</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skills Info -->
+                <div class="skills-info padd-15">
+                  <!-- ,,riadok,, v ktorom je umiestnena cela cast -->
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>HTML / CSS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 72%"></div>
+                        <div class="skill-percent">68%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Javascript / Typescript</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 41%"></div>
+                        <div class="skill-percent">41%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Python / PyGame</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 33%"></div>
+                        <div class="skill-percent">51%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>PHP / SQL MySQL</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 36%"></div>
+                        <div class="skill-percent">34%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Git / GitHub</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 64%"></div>
+                        <div class="skill-percent">54%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- === Vzdelanie - Skusenosti === -->
+              <!-- ,,riadok,, v ktorom je umiestnena cela lava cast -->
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Kurz</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline box-shadow">
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2021
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">D.Šetek - Hackni svou budoucnost / Tvorba webových stránek - HTML /
+                            CSS</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                            similique amet rem impedit recusandae. Alias dignissimos consequatur, enim eligendi nobis
+                            a
+                            id sequi, hic aut nulla temporibus voluptates commodi laboriosam!</p>
+                        </div>
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2022
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">D.Šetek - Hackni svou budoucnost / Moderný JavaScript</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                            similique amet rem impedit recusandae. Alias dignissimos consequatur, enim eligendi nobis
+                            a
+                            id sequi, hic aut nulla temporibus voluptates commodi laboriosam!</p>
+                        </div>
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2022
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">D.Šetek - Hackni svou budoucnost / PHP - SQL MySQL</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                            similique amet rem impedit recusandae. Alias dignissimos consequatur, enim eligendi nobis
+                            a
+                            id sequi, hic aut nulla temporibus voluptates commodi laboriosam!</p>
+                        </div>
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2022
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">D.Šetek - Hackni svou budoucnost / Git - GitHub</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                            similique amet rem impedit recusandae. Alias dignissimos consequatur, enim eligendi nobis
+                            a
+                            id sequi.</p>
+                        </div>
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2022
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">D.Šetek - Hackni svou budoucnost / Python - PyGame</h4>
+                          <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                            similique amet rem impedit recusandae. Alias dignissimos consequatur, enim eligendi nobis
+                            a
+                            id sequi.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ,,riadok,, v ktorom je umiestnena cela prava cast -->
+                <div class="experience padd-15">
+                  <h3 class="title">Šport</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline box-shadow">
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2015
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">Spartan Race - Trifecta</h4>
+                          <p class="timeline-text">
+                            Jasná SK - SPRINT 5+km 20Prekážok <br>
+                            Donovaly SK - SUPER 10+km 25Prekážok <br>
+                            Tatranská Lomnica SK - BEAST 21+KM 30Prekážok
+                          </p>
+                        </div>
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2016
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">Spartan Race - Trifecta</h4>
+                          <p class="timeline-text">
+                            Praha CZ - SPRINT 5+km 20Prekážok <br>
+                            Košice SK - SPRINT 5+km 20Prekážok <br>
+                            Valčianska Dolina SK - SUPER 10+km 25Prekážok <br>
+                            Liberec CZ - BEAST 21+KM 30Prekážok
+                          </p>
+                        </div>
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2017
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">Spartan Race - Trifecta</h4>
+                          <p class="timeline-text">
+                            Dolní Morava CZ - SPRINT 5+km 20Prekážok <br>
+                            Kraków PL - SPRINT 5+km 20Prekážok <br>
+                            Valčianska Dolina SK - SUPER 10+km 25Prekážok <br>
+                            Kubínská Hoľa SK - BEAST 21+KM 30Prekážok
+                          </p>
+                        </div>
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2019
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">Spartan Race - Trifecta</h4>
+                          <p class="timeline-text">
+                            Slovenský Raj SK - SPRINT 5+km 20Prekážok <br>
+                            Valčianska Dolina SK - SPRINT 5+km 20Prekážok <br>
+                            Dolní Morava CZ - SUPER 10+km 25Prekážok <br>
+                            Kazincbarcika HU - BEAST 21+KM 30Prekážok
+                          </p>
+                        </div>
+                        <!-- === Timeline Item === -->
+                        <div class="timeline-item">
+                          <!-- gulicka -->
+                          <div class="circle-dot"></div>
+                          <!-- nadpis - datum s ikonou -->
+                          <h3 class="timeline-date">
+                            <i class="bi bi-calendar-fill"></i>2023
+                          </h3>
+                          <!-- nadpis pozicie -->
+                          <h4 class="timeline-title">Spartan Race - Trifecta</h4>
+                          <p class="timeline-text">
+                            Prešov SK - SPRINT 5+km 20Prekážok <br>
+                            COMING SOON SK - SUPER 10+km 25Prekážok <br>
+                            COMING SOON SK - BEAST 21+KM 30Prekážok
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Sekcia PORTFOLIO - Start ===== -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfólio</h2>
+              <h3>Prezentácia webových stránok<span> Front-end</span></h3>
+              <p>Vznik portfólia vďačí za pomoc litrov vypitej kávy, premýšľania, ale samozrejme aj za pomoci webových
+                technológií, klávesnice a myši.</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- === Portfolio ITEM 1 === -->
+            <div class="portfolio-item padd-15">
+              <a href="https://www.tlacim3d.sk/">
+                <h3 class="portfolio-title">tlacim3d.sk</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/screen01.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM 2 === -->
+            <div class="portfolio-item padd-15">
+              <a href="https://www.janzilla.eu/">
+                <h3 class="portfolio-title">janzilla.eu</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/screen02.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM 3 === -->
+            <div class="portfolio-item padd-15">
+              <a href="webpage/portfolio/answerphotography/index.html">
+                <h3 class="portfolio-title">Answer Photography</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/screen03.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM 4 === -->
+            <div class="portfolio-item padd-15">
+              <a href="../webpage/portfolio/databasesystem/index.php">
+                <h3 class="portfolio-title">PHP / MySQL
+                  Database System</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/screen04.png" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM 5 === -->
+            <div class="portfolio-item padd-15">
+              <a href="#">
+                <h3 class="portfolio-title">Coming Soon</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/comingsoon.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM 6 === -->
+            <div class="portfolio-item padd-15">
+              <a href="webpage/portfolio/arasidwarehouse/index.html">
+                <h3 class="portfolio-title">Arašid Warehouse</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/screen06.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Sekcia PORTFOLIO PYTHON - Start ===== -->
+      <section class="portfolio section-python" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Python</h2>
+              <h3>Prezentácia Python<span> Back-end</span></h3>
+              <p>Vznik portfólia vďačí za pomoc litrov vypitej kávy, premýšľania, ale samozrejme aj za pomoci webových
+                technológií, klávesnice a myši.</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- === Portfolio ITEM === -->
+            <div class="portfolio-item padd-15">
+              <a href="#">
+                <h3 class="portfolio-title">Coming Soon</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/comingsoon.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM === -->
+            <div class="portfolio-item padd-15">
+              <a href="#">
+                <h3 class="portfolio-title">Coming Soon</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/comingsoon.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM === -->
+            <div class="portfolio-item padd-15">
+              <a href="https://github.com/cyberchain31/Battle-with-Ghosts">
+                <h3 class="portfolio-title">Battle with Ghosts.exe - Pygame OOP</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/title-battle.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM === -->
+            <div class="portfolio-item padd-15">
+              <a href="https://github.com/cyberchain31/Ghost-Castle">
+                <h3 class="portfolio-title">Ghost Castle.exe - PyGame</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/title-ghost.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM === -->
+            <div class="portfolio-item padd-15">
+              <a href="https://github.com/cyberchain31/Henky-s-home-game">
+                <h3 class="portfolio-title">Henky's home.exe - PyGame</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/title-hankey.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- === Portfolio ITEM === -->
+            <div class="portfolio-item padd-15">
+              <a href="https://github.com/cyberchain31/snake-game">
+                <h3 class="portfolio-title">Snake Game - Turtle Graphics</h3>
+                <div class="portfolio-item-inner box-shadow">
+                  <div class="portfolio-img">
+                    <img src="./img/portfolio/title-snakegame.jpg" alt="screenshot">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Sekcia 3D Print - Start ===== -->
+      <section class="print3d section" id="print3d">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>3D Tlač</h2>
+              <h3>Filament<span> ožíva v tlačiarni</span></h3>
+              <p>Tlač objektov a komiksových charakterov aditívnym druhom výroby, pomocou technológie FDM (FFF).
+                Typ materialu PLA. Polylaktid alebo kyselina polymliečna je typ plastu, ktorý sa nevyrába z ropy,
+                ale z rastlinných zdrojov sacharidov. Neprodukuje zápach ani toxické výpary. Ide teda o bioplast.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ===Print-3D ITEM 1 === -->
+            <div class="print3d-item padd-15">
+              <a href="./webpage/3dprint/indexironman.html">
+                <div class="print3d-item-inner print3d-bg-1">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Iron Man - Mark II</h4>
+                  <p>Technológia: FDM</p>
+                  <p>3D Tlačiareň: Prusa i3 MK3S+</p>
+                  <p>Filament: Prusament PLA Galaxy Silver</p>
+                  <p>Teplota: 215°C/60°C</p>
+                  <p>Rozmery: v30cm x š19cm x h15cm</p>
+                  <p>Doba tlače: cca 78 hodín</p>
+                </div>
+              </a>
+            </div>
+            <!-- ===Print-3D ITEM 2 === -->
+            <div class="print3d-item padd-15">
+              <a href="./webpage/3dprint/indexvenom.html">
+                <div class="print3d-item-inner print3d-bg-2">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Venom</h4>
+                  <p>Technológia: FDM</p>
+                  <p>3D Tlačiareň: Prusa i3 MK3S+</p>
+                  <p>Filament: Prusament PLA Galaxy Silver</p>
+                  <p>Teplota: 215°C/60°C</p>
+                  <p>Rozmery: v28cm x š22cm x h18cm</p>
+                  <p>Doba tlače: cca 79 hodín</p>
+                </div>
+              </a>
+            </div>
+            <!-- ===Print-3D ITEM 3 === -->
+            <div class="print3d-item padd-15">
+              <a href="./webpage/3dprint/indexblackwidow.html">
+                <div class="print3d-item-inner print3d-bg-3">
+                  <!-- <a href="https://lovaspatrik.sk/"> -->
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Black Widow</h4>
+                  <p>Technológia: FDM</p>
+                  <p>3D Tlačiareň: Prusa i3 MK3S+</p>
+                  <p>Filament: Prusament PLA Galaxy Silver</p>
+                  <p>Teplota: 215°C/60°C</p>
+                  <p>Rozmery: v24cm x š16cm x h17cm</p>
+                  <p>Doba tlače: cca 46 hodín</p>
+                </div>
+              </a>
+            </div>
+            <!-- ===Print-3D ITEM 4 === -->
+            <div class="print3d-item padd-15">
+              <a href="./webpage/3dprint/indexhulk.html">
+                <div class="print3d-item-inner print3d-bg-4">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Hulk</h4>
+                  <p>Technológia: FDM</p>
+                  <p>3D Tlačiareň: Prusa i3 MK3S+</p>
+                  <p>Filament: Prusament PLA Pearl Mouse</p>
+                  <p>Teplota: 215°C/60°C</p>
+                  <p>Rozmery: v32cm x š26cm x h33cm</p>
+                  <p>Doba tlače: cca 147 hodín</p>
+                </div>
+              </a>
+            </div>
+            <!-- ===Print-3D ITEM 5 === -->
+            <div class="print3d-item padd-15">
+              <a href="./webpage/3dprint/indexblackpanther.html">
+                <div class="print3d-item-inner print3d-bg-5">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Black Panther</h4>
+                  <p>Technológia: FDM</p>
+                  <p>3D Tlačiareň: Prusa i3 MK3S+</p>
+                  <p>Filament: Prusament PLA Galaxy Silver</p>
+                  <p>Teplota: 215°C/60°C</p>
+                  <p>Rozmery: v31cm x š17cm x h19cm</p>
+                  <p>Doba tlače: cca 83 hodín</p>
+                </div>
+              </a>
+            </div>
+            <!-- ===Print-3D ITEM 6 === -->
+            <div class="print3d-item padd-15">
+              <a href="./webpage/3dprint/indexspiderman.html">
+                <div class="print3d-item-inner print3d-bg-6">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Spider-Man</h4>
+                  <p>Technológia: FDM</p>
+                  <p>3D Tlačiareň: Prusa i3 MK3S+</p>
+                  <p>Filament: Prusament PLA Galaxy Silver</p>
+                  <p>Teplota: 215°C/60°C</p>
+                  <p>Rozmery: v25cm x š10cm x h10cm</p>
+                  <p>Doba tlače: cca 39 hodín</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Sekcia SCULPTURE - Start ===== -->
+      <section class="sculpture section" id="sculpture">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Modelovanie</h2>
+              <h3>Kreativita<span> nikdy nespí</span></h3>
+              <p>Modelovanie populárnych charakterov z netoxickej modelovacej hmoty talianskej značky DAS tvrdnúcej na
+                vzduchu a francúzskej
+                modelovacej hmoty Chavant Le Beau Touche Soft, Chavant NSP Medium bez síry a oxidácií na báze oleja.</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- === Sculpture ITEM 1 === -->
+            <div class="sculpture-item padd-15">
+              <a href="./webpage/sculptures/indexthemandalorian.html">
+                <div class="sculpture-item-inner sculpture-bg-1">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>The Mandalorian with Grogu</h4>
+                  <p>Materiál: Chavant NSP Medium</p>
+                  <p>Farba: sada akrylových farieb</p>
+                  <p>Rozmery: v34cm x š21cm x h15cm</p>
+                  <p>Doba výroby: cca 8 týždňov</p>
+                </div>
+              </a>
+            </div>
+            <!-- === Sculpture ITEM 2 === -->
+            <div class="sculpture-item padd-15">
+              <a href="./webpage/sculptures/indexthemask.html">
+                <div class="sculpture-item-inner sculpture-bg-2">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>The Mask with Milo</h4>
+                  <p>Materiál: Chavant Le Beau Touche Soft</p>
+                  <p>Farba: sada akrylových farieb</p>
+                  <p>Rozmery: v32cm x š16cm x h18cm</p>
+                  <p>Doba výroby: cca 4 týždne</p>
+                </div>
+              </a>
+            </div>
+            <!-- === Sculpture ITEM 3 === -->
+            <div class="sculpture-item padd-15">
+              <a href="./webpage/sculptures/indexgroot.html">
+                <div class="sculpture-item-inner sculpture-bg-3">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>I Am Groot</h4>
+                  <p>Materiál: DAS Terracotta, Pasta per modellare</p>
+                  <p>Farba: sada akrylových farieb</p>
+                  <p>Rozmery: v30cm x š16cm x h15cm</p>
+                  <p>Doba výroby: cca 2 týždne</p>
+                </div>
+              </a>
+            </div>
+            <!-- === Sculpture ITEM 4 === -->
+            <div class="sculpture-item padd-15">
+              <a href="./webpage/sculptures/indexyogi.html">
+                <div class="sculpture-item-inner sculpture-bg-4">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Yogi Bear</h4>
+                  <p>Materiál: DAS Terracotta, Pasta per modellare</p>
+                  <p>Farba: sada akrylových farieb</p>
+                  <p>Rozmery: v29cm x š17cm x h16cm</p>
+                  <p>Doba výroby: cca 2 týždne</p>
+                </div>
+              </a>
+            </div>
+            <!-- === Sculpture ITEM 5 === -->
+            <div class="sculpture-item padd-15">
+              <a href="./webpage/sculptures/indexthebatman.html">
+                <div class="sculpture-item-inner sculpture-bg-5">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>The Batman</h4>
+                  <p>Materiál: DAS Terracotta, Pasta per modellare</p>
+                  <p>Farba: sada akrylových farieb</p>
+                  <p>Rozmery: v29cm x š17cm x h12cm</p>
+                  <p>Doba výroby: cca 3 týždne</p>
+                </div>
+              </a>
+            </div>
+            <!-- === Sculpture ITEM 6 === -->
+            <div class="sculpture-item padd-15">
+              <a href="./webpage/sculptures/indexsuperman.html">
+                <div class="sculpture-item-inner sculpture-bg-6">
+                  <div class="icon">
+                    <i class="bi bi-door-open"></i>
+                  </div>
+                  <h4>Superman</h4>
+                  <p>Materiál: DAS Terracotta, Pasta per modellare</p>
+                  <p>Farba: sada akrylových farieb</p>
+                  <p>Rozmery: v35cm x š16cm x h12cm</p>
+                  <p>Doba výroby: cca 3 týždne</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Sekcia KONTAKT - Start ===== -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Kontakt</h2>
+            </div>
+          </div>
+          <h3 class="contact-title">Nájdeš ma na sociálnych sieťach</h3>
+          <h4 class="contact-subtitle">Zabav sa...</h4>
+          <div class="row">
+            <!-- === KONTAKT ITEM === -->
+            <div class="contact-info-item padd-15">
+              <a href="https://www.linkedin.com/in/patrik-lov%C3%A1s-131534228/">
+                <div class="icon">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <h4>Linkedin</h4>
+              </a>
+            </div>
+            <!-- === KONTAKT ITEM === -->
+            <div class="contact-info-item padd-15">
+              <a href="https://www.instagram.com/accounts/login/?next=/spartein31/">
+                <div class="icon">
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <h4>Instagram</h4>
+              </a>
+            </div>
+            <!-- === KONTAKT ITEM === -->
+            <div class="contact-info-item padd-15">
+              <a href="https://www.facebook.com/patres.el">
+                <div class="icon">
+                  <i class="bi bi-facebook"></i>
+                </div>
+                <h4>Facebook</h4>
+              </a>
+            </div>
+            <!-- === KONTAKT ITEM === -->
+            <div class="contact-info-item padd-15">
+              <a href="https://github.com/cyberchain31">
+                <div class="icon">
+                  <i class="bi bi-github"></i>
+                </div>
+                <h4>Github</h4>
+              </a>
+            </div>
+          </div>
+
+          <!-- === KONTAKTNY FORMULAR === -->
+          <h3 class="contact-title ">Formulár</h3>
+          <h4 class="contact-subtitle">Napíš mi...</h4>
+          <div class="row">
+
+            <form action="mailer.php" class="contact-form padd-15" method="POST" onsubmit="validateForm()">
+              <!-- event.preventDefault(); -->
+              <div class="row">
+                <!-- === FORM ITEM === -->
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Meno">
+                    <label for="name"></label>
+                    <!-- vypisanie neplatneho udaju -->
+                    <small class="error"></small>
+                  </div>
+                </div>
+                <!-- === FORM ITEM === -->
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                    <!-- vypisanie neplatneho udaju -->
+                    <small class="error"></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- === FORM ITEM === -->
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" name="object" class="form-control" id="object" placeholder="Predmet">
+                    <!-- vypisanie neplatneho udaju -->
+                    <small class="error"></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- === FORM ITEM === -->
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea type="text" name="message" class="form-control" id="message"
+                      placeholder="Správa"></textarea>
+                    <!-- vypisanie neplatneho udaju -->
+                    <small class="error"></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- === FORM ITEM === -->
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <button type="submit" class="btn formSubmit" value="send">Odoslať</button>
+                    <p id="success"></p>
+                    <!-- <p id="denied"></p> -->
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <p class="date">Copyright &copy; Patrik Lovás. Všetky práva vyhradené 2021</p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- === PREPINAC FARBY A PREPINAC POZADIA === -->
+  <div class="style-switch">
+    <div class="style-switch-toggle switch-icon">
+      <i class="bi bi-paint-bucket"></i>
+    </div>
+
+    <div class="day-night switch-icon">
+      <i class="bi"></i>
+    </div>
+    <h4>Zmena Farby</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+    </div>
+  </div>
+
+  <!-- </canvas> -->
+
+  <!-- js -->
+  <!-- auto pisanie textu -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- <script src="js/matrixrain.js"></script> -->
+  <script src="js/music-player.js"></script>
+  <script src="js/style-switch.js"></script>
+  <script src="js/roll-bar.js"></script>
+
+  <!-- ===== MATRIX CODE ===== -->
+  <!-- <script>
+    const matrixRain = new MatrixRain(
+      element = document.getElementById("canvas"),
+      width = window.innerWidth,
+      height = window.innerHeight,
+      charList = [
+        'V', 'I', 'T', 'A', 'J',
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        'V', 'I', 'T', 'A', 'J',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        'V', 'I', 'T', 'A', 'J',
+        '+', '-', '*', '=', '<', '>', ':', '.',
+        'V', 'I', 'T', 'A', 'J',
+        'ﾊ', 'ﾐ', 'ﾋ', 'ｰ', 'ｳ', 'ｼ', 'ﾅ', 'ﾓ', 'ﾆ', 'ｻ', 'ﾜ', 'ﾂ', 'ｵ', 'ﾘ', 'ｱ', 'ﾎ', 'ﾃ', 'ﾏ', 'ｹ', 'ﾒ', 'ｴ', 'ｶ',
+        'V', 'I', 'T', 'A', 'J',
+        'ｷ', 'ﾑ', 'ﾕ', 'ﾗ', 'ｾ', 'ﾈ', 'ｽ', 'ﾀ', 'ﾇ', 'ﾍ',
+        'V', 'I', 'T', 'A', 'J',
+      ],
+      red = 102, green = 49, blue = 172,
+      randomColors = false,
+      flowRate = 1,
+      fps = 30,
+    );
+    window.addEventListener("resize", () => {
+      matrixRain.setCanvasDimensions(window.innerWidth, window.innerHeight);
+    });
+  </script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    });
+  </script> -->
+
+</body>
+
+</html>

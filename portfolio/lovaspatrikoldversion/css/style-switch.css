@@ -1,0 +1,88 @@
+/* ===== STYL PREPINACA NA PRAVEJ STRANE ===== */
+
+/* umiestnenie prepinaca farby a pozadia */
+.style-switch {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    padding: 15px;
+    width: 140px;
+    border: 1px solid var(--text-black-700);
+    background: var(--skin-color);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    /* skryje sa lista s farbami - zasunie sa do prava */
+    transform: translateX(100%);
+}
+
+/* vysunie sa lista s farbami na pravej strane, trieda open nie je v html kode */
+.style-switch.open {
+    transform: translateX(-25px);
+}
+
+/* upravenie ikony mesiac - night */
+.style-switch .switch-icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--skin-color-three);
+    right: 100%;
+    border: 1px solid var(--text-black-700);
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* upravenie ikony mesiac - night medzera */
+.style-switch .switch-icon i {
+    line-height: 40px;
+}
+
+/* zarovnanie horneho okraja ikony */
+.style-switch .style-switch-toggle {
+    top: 0;
+}
+
+.style-switch .day-night {
+    top: 42px;
+}
+
+.style-switch h4 {
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+/* lista s farbami */
+.style-switch .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* farby v liste s farbami */
+.style-switch .colors span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.style-switch .color-1 {
+    background: rgb(248,166,27);
+    cursor: pointer;
+}
+
+.style-switch .color-2 {
+    background: rgb(65, 156, 216);
+    cursor: pointer;
+}
+
+.style-switch .color-3 {
+    background: rgb(159, 122, 184);
+    cursor: pointer;
+}

@@ -1,0 +1,146 @@
+/*----------------ZACIATOK KAZDEHO DOKUMENTU CSS - NAMIESTO * TO MOZEM ZAPISAT AJ - html, body---------------*/
+
+/*ZAROVNANIE K OKRAJOM STRANKY*/
+
+* {                                    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /* RESPOSIVE WEBDESIGN */
+
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after {
+     box-sizing: border-box;
+ }
+
+/*-----------------------------------NA DOLNEJ LISTE ZAPNUT WATCH SASS---------------------------------------*/
+
+/* PARTIALS - PREPOJENIE, ROZDELENIE PREMENNYCH DO DRUHEHO SUBORU (KOLI PREHLADNOSTI) */
+
+//@import "../partials/mixins";              // CERPA ZO SUBORU _mixins.scss
+//@import "../css/variables";                // CERPA ZO SUBORU _variables.scss
+//@import "../partials/functions";           // CERPA ZO SUBORU _functions.scss
+//@import "../partials/_utilities.scss";     // CERPA ZO SUBORU _utilities.scs
+
+ /*----------------------------------------------------------------------------------------------------------*/
+body {
+    background: linear-gradient(rgb(219, 122, 84), (rgb(79, 153, 85))) no-repeat;
+    //height: 100vh;                             // vh - viewport hight, vyska okna bude vzdy 100%
+}
+
+h1, h4 {
+  font-family: 'Pushster', cursive;
+  text-decoration: underline;
+}
+
+.gallery1 {
+  width: 98%;
+  display: flex;
+  margin: 5% auto 5%;    // z hora, z bokov, z dola
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.image-box1 {
+  margin: 0 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 0.5s;
+}
+
+.image-box1 img {
+  height: 65%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1s ease-in-out;
+  padding: 1%;
+}
+
+.image-box1:hover {
+  flex-basis: 70%;
+}
+
+.active {
+  flex-basis: 50%;
+}
+
+.gallery1:hover .active {
+  flex-basis: 0;
+}
+
+.image-box1:nth-child(1):hover {
+  flex-basis: 70%;
+}
+
+//////////////////////////////////
+/*
+.gallery2 {
+  //height: 100%;
+  width: 98%;
+  display: flex;
+  margin: 5% auto 5%;    // z hora, z bokov, z dola
+  height: 100vh;
+}
+
+.image-box2 {
+  margin: 0 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: 0.5s;
+  padding: 1%;
+}
+
+.image-box2 img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.image-box2:hover {
+  flex-basis: 70%;
+}
+
+.active2 {
+  flex-basis: 50%;
+}
+
+.gallery2:hover .active2 {
+  flex-basis: 0;
+}
+
+.image-box2:nth-child(1):hover {
+  flex-basis: 70%;
+}
+
+.image-box2:nth-child(2):hover {
+  flex-basis: 30%;
+}
+
+.image-box2:nth-child(3):hover {
+  flex-basis: 30%;
+}
+
+.image-box2:nth-child(5):hover {
+  flex-basis: 50%;
+}
+*/
+.footerSize {
+  font-size: 12px;
+}
+
+ /*---------------------------------------VYPNUTIE FLOATOVANIE ELEMENTOV-------------------------------------*/
+ 
+ /* v html vytvorit <div class="clearfix"></div> - Umiestnit na koniec kodu) */
+
+ .clearfix:before,
+ .clearfix:after {
+     content: "";
+     display:table;
+     clear:both;
+ }

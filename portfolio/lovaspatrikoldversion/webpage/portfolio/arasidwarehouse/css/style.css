@@ -1,0 +1,169 @@
+/*----------------ZACIATOK KAZDEHO DOKUMENTU CSS - NAMIESTO * TO MOZEM ZAPISAT AJ - html, body---------------*/
+/*ZAROVNANIE K OKRAJOM STRANKY*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* RESPOSIVE WEBDESIGN */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*-----------------------------------NA DOLNEJ LISTE ZAPNUT WATCH SASS---------------------------------------*/
+/* PARTIALS - PREPOJENIE, ROZDELENIE PREMENNYCH DO DRUHEHO SUBORU (KOLI PREHLADNOSTI) */
+/*----------------------------------------------------------------------------------------------------------*/
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#07527e), to(black)) no-repeat;
+  background: linear-gradient(#07527e, black) no-repeat;
+}
+
+.bg-selfie {
+  margin-bottom: 100px;
+}
+
+.bg-selfie img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.contact-selfie {
+  background-image: url("../img/20201124_152841.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-selfie img {
+  width: 230px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 80px;
+  background: #262626;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  overflow: hidden;
+  font-family: Arial;
+  z-index: 99;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.menu:hover {
+  width: 220px;
+}
+
+.menuitem span {
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  color: rgba(255, 255, 255, 0);
+}
+
+.menu:hover .menuitem span {
+  color: white;
+}
+
+.menuitem {
+  position: relative;
+  padding: 20px;
+  -webkit-transition: border .5s, background .2s;
+  transition: border .5s, background .2s;
+}
+
+.menuitem:hover {
+  background: #898c94;
+  cursor: pointer;
+}
+
+.text:hover {
+  border-left: 20px solid #538db4;
+}
+
+i {
+  color: #48b973;
+}
+
+h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+h2 {
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+h6 {
+  color: white;
+  margin: 5px 0;
+}
+
+.size {
+  font-size: 15px;
+  color: white;
+}
+
+.section-body {
+  margin-left: 75px;
+}
+
+.arasid img {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 3px 5px #fff;
+          box-shadow: 5px 3px 5px #fff;
+}
+
+.arasid h6 {
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 3px 3px white;
+          box-shadow: 5px 3px 3px white;
+}
+
+.arasid img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactIcon {
+  color: white;
+}
+
+.contact-web a {
+  font-family: 'Comforter', cursive;
+}
+
+@media (min-width: 550px) {
+  .luky {
+    height: 95%;
+  }
+}
+
+/*---------------------------------------VYPNUTIE FLOATOVANIE ELEMENTOV-------------------------------------*/
+/* v html vytvorit <div class="clearfix"></div> - Umiestnit na koniec kodu) */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

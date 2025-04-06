@@ -1,0 +1,19 @@
+localhost cez xamp:
+http://localhost/myphp/database/index.php   IDE
+file:///C:/xampp/htdocs/myphp/database/index.php
+
+php mailer:
+https://github.com/PHPMailer/PHPMailer
+
+do terminalu skopirovat - composer require phpmailer/phpmailer
+
+A DALSI POSTUP JE V PRIECINKU, INSTAL COMPOSER
+
+
+
+
+
+
+
+
+
